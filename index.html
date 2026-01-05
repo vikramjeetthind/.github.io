@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vikramjeet Singh | Web Developer</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vikramjeet Singh | Web Developer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Vikramjeet Singh</h1>
-  <p>Web Developer | WordPress | Shopify | Webflow</p>
-  <a href="#contact" class="btn">Hire Me</a>
-  <a href="https://www.upwork.com/" target="_blank" class="btn secondary">Upwork Profile</a>
+<!-- HERO -->
+<header class="hero">
+  <nav>
+    <h2>Vikramjeet Singh</h2>
+    <a class="hire-btn" href="#hire">Hire Me</a>
+  </nav>
+
+  <div class="hero-content">
+    <h1>Designing Digital Solutions<br><span>That Convert & Scale</span></h1>
+    <p>Web Developer specializing in WordPress, Shopify, Webflow & Custom Solutions.</p>
+    <div class="cta">
+      <a href="#hire" class="primary">Hire Me</a>
+      <a href="#portfolio" class="secondary">View Work</a>
+    </div>
+  </div>
 </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I help businesses and startups build fast, modern, and conversion-focused websites.
-    From WordPress development to custom-coded solutions, I deliver clean, scalable,
-    and user-friendly web experiences.
-  </p>
-</section>
-
-<section id="services">
-  <h2>Services</h2>
-  <div class="grid">
+<!-- SERVICES -->
+<section class="services">
+  <h2>My Services</h2>
+  <div class="service-grid">
     <div>Web Design</div>
     <div>Web Development</div>
     <div>WordPress Development</div>
@@ -34,62 +36,71 @@
     <div>Webflow Development</div>
     <div>Squarespace Development</div>
     <div>Custom Coding</div>
-    <div>Web Apps</div>
+    <div>Web Applications</div>
     <div>SEO Services</div>
     <div>Google Ads</div>
     <div>Social Media Management</div>
   </div>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+  <h2>Portfolio</h2>
 
   <div class="tabs">
-    <button class="tab-btn active" onclick="openTab('wordpress')">WordPress</button>
-    <button class="tab-btn" onclick="openTab('shopify')">Shopify</button>
-    <button class="tab-btn" onclick="openTab('webflow')">Webflow</button>
-    <button class="tab-btn" onclick="openTab('custom')">Custom Code</button>
+    <button class="tab active" onclick="openTab('wp')">WordPress</button>
+    <button class="tab" onclick="openTab('shopify')">Shopify</button>
+    <button class="tab" onclick="openTab('webflow')">Webflow</button>
+    <button class="tab" onclick="openTab('custom')">Custom Code</button>
   </div>
 
-  <div class="tab-content active" id="wordpress">
-    <div class="card">Business Website – Custom WordPress Theme</div>
-    <div class="card">Landing Page – Elementor Optimized</div>
+  <div id="wp" class="tab-content active">
+    <div class="card">Business Website – Custom Theme</div>
+    <div class="card">Landing Page – Elementor</div>
   </div>
 
-  <div class="tab-content" id="shopify">
-    <div class="card">Shopify Store Setup – Conversion Focused</div>
+  <div id="shopify" class="tab-content">
+    <div class="card">Shopify Store Setup</div>
     <div class="card">Product Page Optimization</div>
   </div>
 
-  <div class="tab-content" id="webflow">
-    <div class="card">Webflow Portfolio Website</div>
-    <div class="card">Responsive Business Site</div>
+  <div id="webflow" class="tab-content">
+    <div class="card">Webflow Portfolio Site</div>
+    <div class="card">Responsive Business Website</div>
   </div>
 
-  <div class="tab-content" id="custom">
+  <div id="custom" class="tab-content">
     <div class="card">HTML/CSS/JS Landing Page</div>
-    <div class="card">Custom Website UI Development</div>
+    <div class="card">Custom UI Development</div>
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact Me</h2>
+<!-- WHY ME -->
+<section class="why">
+  <h2>Why Hire Me</h2>
+  <ul>
+    <li>Client-focused communication</li>
+    <li>Clean & scalable code</li>
+    <li>On-time delivery</li>
+    <li>Multi-platform expertise</li>
+    <li>Long-term support mindset</li>
+  </ul>
+</section>
 
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+<!-- HIRE -->
+<section id="hire" class="hire">
+  <h2>Let’s Work Together</h2>
+  <p>Hire me on your preferred freelance platform</p>
 
-  <p class="note">
-    Prefer Upwork?  
-    <a href="https://www.upwork.com/" target="_blank">Contact me via Upwork</a>
-  </p>
+  <div class="hire-buttons">
+    <a href="https://www.upwork.com/" target="_blank">Upwork</a>
+    <a href="https://www.fiverr.com/" target="_blank">Fiverr</a>
+    <a href="https://www.freelancer.com/" target="_blank">Freelancer</a>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 Vikramjeet Singh. All Rights Reserved.</p>
+  <p>© 2026 Vikramjeet Singh — Web Developer</p>
 </footer>
 
 <script src="script.js"></script>
