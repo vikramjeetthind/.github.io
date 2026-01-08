@@ -1,0 +1,29 @@
+:root {
+  --bg: #0b0b0f;
+  --text: #ffffff;
+  --muted: #9ca3af;
+  --accent: #6366f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-inter);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-poppins);
+}
+
+section {
+  padding: 100px 8%;
+}
+
+button {
+  cursor: pointer;
+}
